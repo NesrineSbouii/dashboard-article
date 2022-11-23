@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.email?.value, this.password?.value)
       .subscribe(arg => {
         this.loading = false
-        this.router.navigate(['/'])
+        this.router.navigate(['/home'])
       });
   }   
 }
